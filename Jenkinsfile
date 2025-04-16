@@ -1,6 +1,6 @@
 pipeline {
     agent{
-        label 'Slave_node_Worker'
+        label 'Slave_Node_Worker'
     }
     stages {
         stage('print server info') {
