@@ -1,16 +1,16 @@
 pipeline {
     agent{
-        label 'Slave_Node_Worker'
+        label 'slave_node'
     }
     stages {
         stage('print server info') {
             steps {
-                sh '''
+                sh """
                 whoami
                 uptime
                 pwd
                 echo ${env.HOSTNAME}
-                '''
+                """
             }
         }
     }
